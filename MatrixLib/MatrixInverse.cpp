@@ -1,6 +1,6 @@
 #include"stdafx.h";
 #include "MatrixLib.h";
-void MatrixLib::Class1::transpose()
+void MatrixLib::MatrixClass::transpose()
 {
 	for (int i = 0; i < 2; i++)
 	{

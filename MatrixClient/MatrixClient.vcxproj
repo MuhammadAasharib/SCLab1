@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{1BAAFD8B-1DBE-4655-AA42-4AEC25DB4EEB}</ProjectGuid>
+    <ProjectGuid>{77511313-94F6-437B-8C50-74AE6CB3A919}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>MatrixClient</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
@@ -71,6 +71,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\SSDData\OneDrive\6th Semester\Software Construction\Lab\Lab1\MatrixClient1\MatrixLib;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\SSDData\OneDrive\6th Semester\Software Construction\Lab\Lab1\MatrixClient1\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -93,6 +95,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>MatrixLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

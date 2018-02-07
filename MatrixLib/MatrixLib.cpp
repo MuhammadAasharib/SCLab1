@@ -4,7 +4,7 @@
 #include <iostream>
 #include "MatrixLib.h"
 
-MatrixLib::Class1::Class1() {
+MatrixLib::MatrixClass::MatrixClass() {
 	//initializing the number of rows and columns
 	row1 = 2;
 	col1 = 2;
@@ -12,22 +12,22 @@ MatrixLib::Class1::Class1() {
 	col2 = 2;
 
 	//initialize mat1
-	for (int i = 0; i < Class1::row1; i++) {
-		for (int j = 0; j < Class1::col1; j++) {
+	for (int i = 0; i < MatrixClass::row1; i++) {
+		for (int j = 0; j < MatrixClass::col1; j++) {
 			mat1[i][j] = i + j;
 		}
 	}
 
 	//initilize mat2
-	for (int i = 0; i < Class1::row1; i++) {
-		for (int j = 0; j < Class1::col1; j++) {
+	for (int i = 0; i < MatrixClass::row1; i++) {
+		for (int j = 0; j < MatrixClass::col1; j++) {
 			mat2[i][j] = i - j;
 		}
 	}
 
 }
 
-void MatrixLib::Class1::displayMatrix()
+void MatrixLib::MatrixClass::displayMatrix()
 {
 	for (int i = 0; i < 2; i++)
 	{

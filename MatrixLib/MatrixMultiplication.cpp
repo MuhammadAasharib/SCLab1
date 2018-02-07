@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-void MatrixLib::Class1::MatrixMultiplication() {
+void MatrixLib::MatrixClass::MatrixMultiplication() {
 	if (col1 != row2) {
 		std::cout << "Matrix multiplication not possible" << std::endl;
 		return;

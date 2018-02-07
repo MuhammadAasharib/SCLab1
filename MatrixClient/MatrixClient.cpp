@@ -2,13 +2,14 @@
 //
 
 #include "stdafx.h"
-#include "MatrixLib.h"
+#include "../MatrixLib/MatrixLib.h"
 
-//using namespace MatrixLib;
 
 int main()
 {
-	MatrixLib::Class1 v;
+	MatrixLib::MatrixClass* c1 = new MatrixLib::MatrixClass();
+	c1->add();
+	c1->displayMatrix();
     return 0;
 }
 

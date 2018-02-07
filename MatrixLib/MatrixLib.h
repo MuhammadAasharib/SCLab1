@@ -1,10 +1,11 @@
 #pragma once
-
-using namespace System;
+#include "Stdafx.h"
+#include <iostream>
+//using namespace System;
 
 namespace MatrixLib {
 
-	public ref class Class1
+	class __declspec(dllexport) MatrixClass
 	{
 		// TODO: Add your methods for this class here.
 	private:
@@ -16,7 +17,8 @@ namespace MatrixLib {
 		int col1;
 		int col2;
 	public:
-		Class1();
+		
+		MatrixClass();
 		void add();
 		void sub();
 		void MatrixMultiplication();
