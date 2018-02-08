@@ -12,9 +12,10 @@ void MatrixLib::MatrixClass::MatrixMultiplication() {
 	else {
 		for (int i = 0; i < row1; i++) {
 			for (int j = 0; j < col2; j++) {
-				for (int k = 0; k < col1; k++)
-				{
-					resultMat[i][j] += mat1[i][k] * mat2[k][j];
+				for (int k = 0; k < col1; k++){
+					int a1 = mat1[i][k];
+					int a2 = mat2[k][j];
+					resultMat[i][j] += a1 * a2;
 				}
 			}
 		}

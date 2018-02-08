@@ -24,5 +24,7 @@ namespace MatrixLib {
 		void MatrixMultiplication();
 		void transpose();
 		void displayMatrix();
+		void displayMatrix1();
+		void displayMatrix2();
 	};
 }
